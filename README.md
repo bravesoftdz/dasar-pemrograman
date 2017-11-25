@@ -1,4 +1,4 @@
-##Desclaimer
+##Disclaimer##
 -----------------------------------------
 
 Semua script yang tertulis dalam project [ini](https://github.com/universitas-siliwangi/dasar-pemrograman) : 
@@ -14,9 +14,11 @@ dalam menggunakan kode didalamnya mohon perhatikan :
 2. semua file yang ditulis dengan awalan **program** hanya ditulis ulang dari modul pembelajaran universitas siliwangi, dan semua ketentuan dikembalikan kepada penulis
 3. semua file diluar tersebut diatas merupakan tulisan dari [herman sugiharto](https://github.com/herman1618) yang dikembalikan kepada licensi tertera pada project ini (GNU 3.0)
 
+semua script dalam project ini dapat di sebar luas kan setelah mendapat izin dari penulis, atau dengan menyertakan url project ini
+
 ----------------------------------------------
-**IMPORTAN THING** pemilik tidak bertanggung jawab atas semua tindak laku pengguna kode baik itu menggunakannya untuk mencontek, melakukan hal buruk dan lain sebagainya, semua tindakan tersebut penulis kembalikan kepada hukum yang berlaku
+**IMPORTAN THING** penulis diatas tidak bertanggung jawab atas semua tindak laku pengguna kode, baik itu menggunakannya untuk mencontek, melakukan hal buruk dan lain sebagainya, semua tindakan tersebut penulis kembalikan kepada hukum yang berlaku
 
 
 -----------------------------------------------
-UNIVERSITAS SILIWANGI - Herman Sugiharto
+**UNIVERSITAS SILIWANGI** - [Herman Sugiharto](mailto:hermansugiharto1618@gmail.com)
