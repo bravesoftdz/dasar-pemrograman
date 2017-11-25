@@ -14,7 +14,7 @@ var
             readln(Tab[i]);
         end;
     end;
-    procedure seqsearch(T : TabInteger; n , x :integer; var idx : integer);
+    procedure binsearch(T : TabInteger; n , x :integer; var idx : integer);
     var
             BatasAtas,BatasBawah,Tengah : integer;
     begin
@@ -39,7 +39,7 @@ begin
     write('Banyaknya Data : ');readln(jml_data);
     InputData(jml_data,TabInt);
     write('Data yang akan dicari : ');readln(x);
-    seqsearch(TabInt,jml_data,x,idx);
+    binsearch(TabInt,jml_data,x,idx);
     if idx = 0 then
         write('data tidak ditemukan')
     else
