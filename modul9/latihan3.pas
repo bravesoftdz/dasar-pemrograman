@@ -1,4 +1,5 @@
 program sequential_search;
+uses crt;
 const Nmax=100;
 type
     TabInteger = array[1..Nmax] of integer;
@@ -23,25 +24,25 @@ var
         imin:=1;
         for i := 1 to max do
         begin
-            if (Tab[i] > nmax)
+            if (Tab[i] > Tab[imax]) then
                 begin
                     nmax := Tab[i];
                     imax := i;
                 end;
-            if (Tab[i] < nmax)
+            if (Tab[i] < Tab[imin]) then
                 begin
-                    nmin := Tab[i]
+                    nmin := Tab[i];
                     imin := i;
                 end;
         end;
     end;
 begin
+    clrscr;
     write('Banyaknya Data : ');readln(jml_data);
     InputData(jml_data,TabInt);
-    write('Data yang akan dicari : ');readln(x);
-    SeqSearch(jml_data,TabInt,max,min,imax,imin);
-    write('Nilai Terbesar adalah ',max);writeln('Terdapat pada Indeks ke - ',imax);
-    write('Nilai Terkecil adalah ',min);writeln('Terdapat pada Indeks ke - ',imin);
+    PushData(jml_data,TabInt,max,min,imax,imin);
+    write('Nilai Terbesar adalah ',max);writeln(' Terdapat pada Indeks ke - ',imax);
+    write('Nilai Terkecil adalah ',min);writeln(' Terdapat pada Indeks ke - ',imin);
 
     readln;
 end.

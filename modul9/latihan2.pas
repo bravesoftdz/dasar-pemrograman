@@ -1,4 +1,5 @@
 program sequential_search;
+uses crt;
 const Nmax=100;
 type
     TabInteger = array[1..Nmax] of integer;
@@ -16,7 +17,7 @@ var
     end;
     procedure SeqSearch(T : TabInteger; n,x : integer;
                         var j : Integer; var found : boolean);
-    var 
+    var
         i:integer;
     begin
         i := 1;
@@ -24,22 +25,24 @@ var
         found := false;
         while(i<=n) do
             begin
-                if T[i] = x then 
+                if T[i] = x then
                     begin
                         found := true;
                         j:=j+1;
-                    end;            
+                        i:=i+1;
+                    end
                 else
                     i:=i+1;
             end;
     end;
 begin
+    clrscr;
     write('Banyaknya Data : ');readln(jml_data);
     InputData(jml_data,TabInt);
     write('Data yang akan dicari : ');readln(x);
     SeqSearch(TabInt,jml_data,x,data,ketemu);
-    if ketemu := true then
-        write('data ditemukan!!! Ada ',data,'nilai yang sama')
+    if ketemu = true then
+        write('data ditemukan!!! Ada ',data,' nilai yang sama')
     else
         write('data tidak ditemukan!!!!');
     readln;
